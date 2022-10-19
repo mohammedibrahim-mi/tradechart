@@ -1,4 +1,4 @@
-import 'package:Cryptonoma/widgets/darkcolor.dart';
+import 'package:Sample/widgets/darkcolor.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +12,9 @@ class chartpage extends StatefulWidget {
 }
 
 class _chartpageState extends State<chartpage> {
+  
+  //Add flutter_inappwebview Package
+  // flutter_webview_plugin: ^0.3.11
 
   final GlobalKey webViewKey = GlobalKey();
   InAppWebViewController webViewController;
@@ -45,6 +48,8 @@ class _chartpageState extends State<chartpage> {
             onWebViewCreated: (controller) {
               webViewController = controller;
             },
+            //data is in Script form
+            //Script Widget from Trading view web
             initialData: InAppWebViewInitialData(
                 data:
                 """
