@@ -1,4 +1,4 @@
-import 'package:Sample/widgets/darkcolor.dart';
+import 'package:sample/widgets/darkcolor.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
